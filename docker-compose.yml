@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+
+  planify-db:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: HeRyXDyTGrn69m9DsLGDQnDjgtsWTAmgyyfMRkYD
+
+  # planify-adminer:
+  #   image: adminer
+  #   restart: always
+  #   ports:
+  #     - 8090:8080
